@@ -1,0 +1,5 @@
+backup/
+2015-07-*
+.ipynb_checkpoints/
+
+__pycache__/

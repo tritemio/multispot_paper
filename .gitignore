@@ -1,0 +1,8 @@
+data/
+*ipynb_checkpoints*
+dyes/.ipynb_checkpoints/*
+out_notebooks/.ipynb_checkpoints/*
+*.pyc
+data
+Icon*
+.git_historical
