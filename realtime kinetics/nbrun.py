@@ -80,7 +80,8 @@ def run_notebook(notebook_name, nb_suffix='-out', out_path='.', nb_kwargs=None,
     nb_name_input = notebook_name + '.ipynb'
     nb_name_output = notebook_name + '%s.ipynb' % nb_suffix
     nb_name_output = os.path.join(out_path, nb_name_output)
-    display(FileLink(nb_name_input))
+    display(FileLink(nb_name_input,
+                     result_html_prefix='<b>Source Notebook</b>: '))
 
     if execute_kwargs is None:
         execute_kwargs = {}
@@ -107,4 +108,5 @@ def run_notebook(notebook_name, nb_suffix='-out', out_path='.', nb_kwargs=None,
     finally:
         # Save the notebook even when it raises an error
         nbformat.write(nb, nb_name_output)
-        display(FileLink(nb_name_output))
+        display(FileLink(nb_name_output,
+                         result_html_prefix='<b>Output Notebook</b>: '))
