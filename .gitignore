@@ -6,3 +6,5 @@ out_notebooks/.ipynb_checkpoints/*
 data
 Icon*
 .git_historical
+bak/
+collateral/
