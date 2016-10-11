@@ -26,7 +26,7 @@ def load_fit_data(filename):
     return params
 
 def load_bursts_data(filename, window, step):
-    fname = 'results/%s_burst_data_vs_time__window%ds_step%ds.txt' % (filename, window, step)
+    fname = 'results/%s_burst_data_vs_time__window%ds_step%ds.csv' % (filename, window, step)
     bursts = pd.DataFrame.from_csv(fname)
     return bursts
 
