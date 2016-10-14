@@ -6,7 +6,7 @@ This repository contains the notebooks used for the analysis the paper:
 Ingargiola et al. (2016)*
 
 You can navigate the notebooks online starting from [index.ipynb](http://nbviewer.jupyter.org/github/tritemio/multispot_paper/blob/master/index.ipynb),
-or you can also reproduce the full analysis by following the steps below.
+or you can reproduce the full analysis by following the steps below.
 
 ## How to use?
 
@@ -44,3 +44,11 @@ For now, you should be able to re-run the analysis on the current scientific pyt
 In the future, new version some used library can introduce incompatibilities that break the code
 posted here. In this case, you can recreate the original conda environment used for running this
 analysis using the file `environment.yml`.
+
+## License
+
+All the text and documentation are released under the
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license.
+All code is under the MIT license (see LICENSE.txt).
+
+Copyright 2016 The Regents of the University of California, Antonino Ingargiola
