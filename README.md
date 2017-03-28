@@ -6,9 +6,11 @@ This repository contains the notebooks used for the analysis the paper:
 Ingargiola et al. **PLOS ONE** (2017) *in press*, 
 or preprint **bioRxiv** (2016) doi:[10.1101/085027](https://doi.org/10.1101/085027)
 
-Navigate the notebooks online starting from (nbviewer):
+To explore the repository start here:
 
 - [index.ipynb](http://nbviewer.jupyter.org/github/tritemio/multispot_paper/blob/master/index.ipynb)
+
+The previous link opens the main index notebook on nbviewer.
 
 ## How to use?
 
