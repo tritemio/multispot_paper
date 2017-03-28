@@ -2,11 +2,13 @@
 
 This repository contains the notebooks used for the analysis the paper:
 
-*Multi-spot single-molecule FRET: towards high-throughput analysis of freely diffusing molecules
-Ingargiola et al. (2016)*
+*Multi-spot single-molecule FRET: high-throughput analysis of freely diffusing molecules*
+Ingargiola et al. **PLOS ONE** (2017) *in press*, 
+or preprint **bioRxiv** (2016) doi:[10.1101/085027](https://doi.org/10.1101/085027)
 
-You can navigate the notebooks online starting from [index.ipynb](http://nbviewer.jupyter.org/github/tritemio/multispot_paper/blob/master/index.ipynb),
-or you can reproduce the full analysis by following the steps below.
+View the notebooks online (nbviewer):
+
+- [index.ipynb](http://nbviewer.jupyter.org/github/tritemio/multispot_paper/blob/master/index.ipynb),
 
 ## How to use?
 
@@ -39,11 +41,15 @@ Running index notebook you will re-execute the full analysis and regenerate the
 [numeric results](results).
 
 ### Reproducibility
-For now, you should be able to re-run the analysis on the current scientific python stack.
+You can re-run the analysis on the current (2016-2017) scientific python3 stack
+(numpy 1.11-1.12, scipy 1.18-1.19, pytables 3.x, lmfit 0.9.5, pandas 1.18-1.19).
+For reproducibility, use FRETBursts 0.5.9. New FRETBursts version give slight different
+results due to changes in bakground estimation 
+(see details [here](http://fretbursts.readthedocs.io/en/latest/releasenotes.html#backward-incompatible-changes)).
 
 In the future, new version some used library can introduce incompatibilities that break the code
 posted here. In this case, you can recreate the original conda environment used for running this
-analysis using the file `environment.yml`.
+analysis using the file `environment_macos.yml`.
 
 ## License
 
