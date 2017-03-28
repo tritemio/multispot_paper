@@ -48,7 +48,7 @@ def run_notebook(notebook_name):
 
 def run_notebook_template(notebook_name, remove_out=True,
                           data_ids=['7d', '12d', '17d', '22d', '27d'],
-                          ph_sel=None):
+                          ph_sel=None, save_data=True):
     """Run a template ALEX notebook for all the 5 samples.
 
     Fit results are saved in the folder 'results'.
@@ -99,6 +99,7 @@ def run_notebook_template(notebook_name, remove_out=True,
                 result_html_prefix='<li><b>Output Notebook</b> (%s): ' % data_id),
                 result_html_suffix='</li>')
     display(HTML('</ul>'))
-    display(pd.read_csv(data_fname).set_index('sample').round(4))
-    dl_link = FileLink(data_fname, result_html_prefix='<b>Download Data:</b> ')
-    display(dl_link)
+    if save_data:
+        display(pd.read_csv(data_fname).set_index('sample').round(4))
+        dl_link = FileLink(data_fname, result_html_prefix='<b>Download Data:</b> ')
+        display(dl_link)
