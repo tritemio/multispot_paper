@@ -3,7 +3,7 @@
 This repository contains the notebooks used for the analysis the paper:
 
 *Multi-spot single-molecule FRET: high-throughput analysis of freely diffusing molecules*
-Ingargiola et al. **PLOS ONE** (2017) *in press*, 
+Ingargiola et al. **PLOS ONE** (2017) doi:[10.1101/085027](https://doi.org/10.1371/journal.pone.0175766), 
 or preprint **bioRxiv** (2016) doi:[10.1101/085027](https://doi.org/10.1101/085027)
 
 To explore the repository start here:
@@ -46,7 +46,7 @@ Running index notebook you will re-execute the full analysis and regenerate the
 You can re-run the analysis on the current (2016-2017) scientific python3 stack
 (numpy 1.11-1.12, scipy 1.18-1.19, pytables 3.x, lmfit 0.9.5, pandas 1.18-1.19).
 For reproducibility, use FRETBursts 0.5.9. New FRETBursts version give slight different
-results due to changes in bakground estimation 
+results due to changes in bakground estimation
 (see details [here](http://fretbursts.readthedocs.io/en/latest/releasenotes.html#backward-incompatible-changes)).
 
 In the future, new version some used library can introduce incompatibilities that break the code
